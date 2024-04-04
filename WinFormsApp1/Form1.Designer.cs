@@ -83,6 +83,10 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label_namber2 = new System.Windows.Forms.Label();
+            this.label_namber1 = new System.Windows.Forms.Label();
+            this.textBoxSchoolHouse = new System.Windows.Forms.TextBox();
+            this.textBoxPetraHouse = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -100,8 +104,6 @@
             this.inputTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.petroHouseNumberNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.Resultlabel_1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -125,7 +127,6 @@
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.petroHouseNumberNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -643,9 +644,11 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.label_namber2);
+            this.groupBox5.Controls.Add(this.label_namber1);
+            this.groupBox5.Controls.Add(this.textBoxSchoolHouse);
+            this.groupBox5.Controls.Add(this.textBoxPetraHouse);
             this.groupBox5.Controls.Add(this.btnCalculate);
-            this.groupBox5.Controls.Add(this.Resultlabel_1);
-            this.groupBox5.Controls.Add(this.petroHouseNumberNumericUpDown);
             this.groupBox5.Location = new System.Drawing.Point(18, 263);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(1040, 357);
@@ -653,6 +656,38 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "groupBox5";
             this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
+            // 
+            // label_namber2
+            // 
+            this.label_namber2.AutoSize = true;
+            this.label_namber2.Location = new System.Drawing.Point(59, 124);
+            this.label_namber2.Name = "label_namber2";
+            this.label_namber2.Size = new System.Drawing.Size(50, 20);
+            this.label_namber2.TabIndex = 7;
+            this.label_namber2.Text = "label5";
+            // 
+            // label_namber1
+            // 
+            this.label_namber1.AutoSize = true;
+            this.label_namber1.Location = new System.Drawing.Point(59, 57);
+            this.label_namber1.Name = "label_namber1";
+            this.label_namber1.Size = new System.Drawing.Size(50, 20);
+            this.label_namber1.TabIndex = 6;
+            this.label_namber1.Text = "label3";
+            // 
+            // textBoxSchoolHouse
+            // 
+            this.textBoxSchoolHouse.Location = new System.Drawing.Point(259, 121);
+            this.textBoxSchoolHouse.Name = "textBoxSchoolHouse";
+            this.textBoxSchoolHouse.Size = new System.Drawing.Size(125, 27);
+            this.textBoxSchoolHouse.TabIndex = 5;
+            // 
+            // textBoxPetraHouse
+            // 
+            this.textBoxPetraHouse.Location = new System.Drawing.Point(259, 54);
+            this.textBoxPetraHouse.Name = "textBoxPetraHouse";
+            this.textBoxPetraHouse.Size = new System.Drawing.Size(125, 27);
+            this.textBoxPetraHouse.TabIndex = 4;
             // 
             // btnCalculate
             // 
@@ -807,22 +842,6 @@
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
             // 
-            // petroHouseNumberNumericUpDown
-            // 
-            this.petroHouseNumberNumericUpDown.Location = new System.Drawing.Point(209, 46);
-            this.petroHouseNumberNumericUpDown.Name = "petroHouseNumberNumericUpDown";
-            this.petroHouseNumberNumericUpDown.Size = new System.Drawing.Size(150, 27);
-            this.petroHouseNumberNumericUpDown.TabIndex = 0;
-            // 
-            // Resultlabel_1
-            // 
-            this.Resultlabel_1.AutoSize = true;
-            this.Resultlabel_1.Location = new System.Drawing.Point(481, 71);
-            this.Resultlabel_1.Name = "Resultlabel_1";
-            this.Resultlabel_1.Size = new System.Drawing.Size(50, 20);
-            this.Resultlabel_1.TabIndex = 2;
-            this.Resultlabel_1.Text = "label3";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -862,7 +881,6 @@
             this.groupBox7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.petroHouseNumberNumericUpDown)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -939,7 +957,9 @@
         private BindingSource bindingSource1;
         private Label label_output;
         private Label label_input;
-        private Label Resultlabel_1;
-        private NumericUpDown petroHouseNumberNumericUpDown;
+        private Label label_namber2;
+        private Label label_namber1;
+        private TextBox textBoxSchoolHouse;
+        private TextBox textBoxPetraHouse;
     }
 }

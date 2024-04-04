@@ -43,7 +43,9 @@ namespace WinFormsApp1
             Result_Label.Text = "";
 
             // Завдання 5
-            Resultlabel_1.Text = "";
+            label_namber1.Text = "номер будинку";
+            label_namber2.Text = "номер школи";
+
             btnCalculate.Text = "порахувати";
 
 
@@ -374,11 +376,6 @@ namespace WinFormsApp1
 
 
 
-
-
-
-
-
         /// Завдання 5
 
 
@@ -390,44 +387,20 @@ namespace WinFormsApp1
         
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            int petroHouseNumber = FindPetroHouseNumber();
-            int schoolHouseNumber = FindSchoolHouseNumber(petroHouseNumber);
+            // Суми  номерів будинків для кожного кварталу
+            int sum1 = 99, sum2 = 117, sum3 = 235;
 
-            MessageBox.Show($"Номер будинку Петра: {petroHouseNumber}\nНомер будинку школи: {schoolHouseNumber}");
-        }
-
-        private int FindPetroHouseNumber()
-        {
-            int sum = 0;
-            int houseNumber = 1;
-
-            while (true)
+            // Розрахунок кількості кварталів
+            int squares = 0;
+            while (sum3 > 0)
             {
-                sum += houseNumber;
-                if (sum == 99)
-                    break;
-
-                houseNumber++;
+                squares++;
+                sum3 -= squares * squares;
             }
 
-            return houseNumber;
-        }
-
-        private int FindSchoolHouseNumber(int petroHouseNumber)
-        {
-            int sum = 0;
-            int houseNumber = petroHouseNumber + 1; // Починаємо з наступного будинку після будинку Петра
-
-            while (true)
-            {
-                sum += houseNumber;
-                if (sum == 117)
-                    break;
-
-                houseNumber++;
-            }
-
-            return houseNumber;
+            // Виведення результатів
+            textBoxPetraHouse.Text = (squares * (squares - 1) / 2).ToString();
+            textBoxSchoolHouse.Text = (squares * squares + sum3).ToString();
         }
 
 
